@@ -1,0 +1,32 @@
+<div class="navapp">
+  <!-- Primeira Barra (Logo e Usuário) -->
+  <div class="top-bar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../../../assets/img/logo.svg" alt="Logo" />
+    </div>
+
+    <!-- Seção do Usuário -->
+    <div class="user-section">
+      <!-- Switch de Tema -->
+      <div class="theme-switch">
+        <input type="checkbox" id="theme-switch" (change)="toggleTheme()" />
+        <label for="theme-switch">tema</label>
+      </div>
+
+      <!-- Perfil do Usuário -->
+      <div class="user-profile">
+        <a (click)="logout()">Usuário Logado</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Segunda Barra (Navegação) -->
+  <nav class="nav-bar">
+    <ul>
+      <li><a routerLink="/usuarios" routerLinkActive="active">Usuários</a></li>
+      <li><a routerLink="/perfis" routerLinkActive="active">Perfis</a></li>
+      <li><a routerLink="/permissoes" routerLinkActive="active">Permissões</a></li>
+    </ul>
+  </nav>
+</div>

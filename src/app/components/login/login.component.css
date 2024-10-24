@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.body {
+  background-image: url("../../../assets/img/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+h2 {
+  margin-top: 47px;
+  margin-left: 53px;
+}
+
+p {
+  margin: 0 53px;
+  color: #595a69;
+  margin-bottom: 22px;
+}
+
+a {
+  font-size: 13;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: row-reverse;
+  color: #595a69;
+}
+
+.login-container {
+  background-color: #fff;
+  width: 566px;
+  height: 572px;
+  margin: 0 290px 0 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: #595a69;
+}
+
+form {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: grid;
+}
+
+input {
+  width: 360px;
+  height: 50px;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #ff6700;
+  color: white;
+  border: none;
+  width: 360px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: #c95000;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+img {
+  width: 880px;
+  position: absolute;
+  top: 60px; /* Ajusta essa posição para sobrepor a imagem */
+  right: 800px; /* Ajuste conforme necessário */
+  z-index: 1; /* Certifique-se de que a imagem esteja na frente ou atrás */
+}

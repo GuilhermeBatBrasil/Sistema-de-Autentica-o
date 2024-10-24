@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="header">
+    <input placeholder="Buscar por Nome" type="text" />
+    <button class="btn" (click)="adicionarPermissao()">
+      Adicionar Permissão
+    </button>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Ativo</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let permissao of permissoes">
+        <td>{{ permissao.ativo }}</td>
+        <td>{{ permissao.nome }}</td>
+        <td>{{ permissao.descricao }}</td>
+        <td>
+          <button class="btn" (click)="editarPermissao(permissao)">
+            Editar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
